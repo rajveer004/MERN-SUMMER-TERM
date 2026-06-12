@@ -47,3 +47,18 @@ const updatedStudentData = students.map(student=>{
 });
 
 console.log(updatedStudentData);
+
+// Use filter function to get the students who have passed the course
+const passedStudents = updatedStudentData.filter(student => {
+    return student.resultStatus === "Pass";
+});
+
+console.log("Passed Students:", passedStudents);
+
+
+// Use filter function to get the students who have failed the course
+const failedStudents = updatedStudentData.filter(student => {
+    return student.resultStatus === "Fail";
+});
+
+console.log("Failed Students:", failedStudents);
