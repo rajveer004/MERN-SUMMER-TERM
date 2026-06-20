@@ -1,0 +1,175 @@
+html,body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.app{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #222;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding:15px 40px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  color:#f4c430;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap:25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #f4c430;
+}
+
+.hero {
+  display : flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 60px;
+  background: linear-gradient(135deg , white, rgb(185, 185, 6));
+}
+.heroText{
+  width : 50%
+}
+.heroText h2 {
+  font-size:42px;
+  margin-bottom: 20px;
+  color:#222
+}
+.heroText p{
+  font-size  : 18px;
+  margin-bottom: 25px;
+  line-height:1.6;
+}
+.heroText button{
+  background-color: #111827;
+  color: white;
+  padding : 12px 28px;
+  border:none;
+  border-radius: 25px;
+  font-size:16px;
+}
+.heroText button:hover {
+   background-color: #263553;
+}
+.hero img{
+  width:300px;
+  height:280px;
+  background-color: white;
+  border: 3px dashed rgb(194, 141, 7);
+  border-radius: 20px;
+  display: felx;
+  justify-content: center;
+}
+/*products*/
+.products{
+  padding:60px;
+  text-align:center;
+}
+.products h2{
+   font-size:32px;
+   margin-bottom:35px;
+}
+.productGrid{
+  display:flex;
+  justify-content: center;
+  gap:30px;
+}
+.card{
+  background-color: white;
+  width:280px;
+  padding:20px;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+.imageBox{
+  height:180px;
+  background-color: #e5e7eb;
+  border-radius:14px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:#6b7280;
+}
+.card h3{
+  margin-bottom: 10px;
+  color:#111827;
+}
+.card p{
+  color:#555;
+  margin-bottom: 12px;
+}
+.card strong{
+  color:#d97706;
+  font-size:20px;
+}
+.cartBtn{
+  margin-top:15px;
+  width: 100px;
+  background-color: #111827;
+  color:white;
+  padding:12px;
+  border:none;
+  border-radius:25px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.cartBtn:hover{
+  background-color:#d97706;
+}
+/*about */
+.about{
+  background-color: #111827;
+  color:white;
+  padding:50px 80px;
+  text-align: center;
+}
+.about h2{
+  font-size:17px;
+  line-height:1.6;
+
+}
